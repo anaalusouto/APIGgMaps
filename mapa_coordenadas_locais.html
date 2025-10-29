@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f3bdb1686238329697bcb9b1939fb3ae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f3bdb1686238329697bcb9b1939fb3ae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f3bdb1686238329697bcb9b1939fb3ae = L.map(
+                "map_f3bdb1686238329697bcb9b1939fb3ae",
+                {
+                    center: [-14.997629, -484.5421770000001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a9ea4fc46f6fe9c76d0ef7fb6ff2ef84 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a9ea4fc46f6fe9c76d0ef7fb6ff2ef84.addTo(map_f3bdb1686238329697bcb9b1939fb3ae);
+        
+    
+            var marker_cluster_8591ad2d33bb9d159bb1b91611faf22a = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_a04e0cedcee07dfc6e60fbaf22293ffc = L.marker(
+                [-15.03333, -484.46944],
+                {
+}
+            ).addTo(marker_cluster_8591ad2d33bb9d159bb1b91611faf22a);
+        
+    
+        var popup_7ccbff0ef0b2c258a009ee638dfdb41a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c507e84249aea6dcf011b8df547cb2b6 = $(`<div id="html_c507e84249aea6dcf011b8df547cb2b6" style="width: 100.0%; height: 100.0%;">         <b>Espécie:</b> Hevea brasiliensis (Willd. ex A. Juss.) Müll. Arg. <br>         Lat: -15.033330, Lon: -484.469440         </div>`)[0];
+                popup_7ccbff0ef0b2c258a009ee638dfdb41a.setContent(html_c507e84249aea6dcf011b8df547cb2b6);
+            
+        
+
+        marker_a04e0cedcee07dfc6e60fbaf22293ffc.bindPopup(popup_7ccbff0ef0b2c258a009ee638dfdb41a)
+        ;
+
+        
+    
+    
+            marker_a04e0cedcee07dfc6e60fbaf22293ffc.bindTooltip(
+                `<div>
+                     Hevea brasiliensis (Willd. ex A. Juss.) Müll. Arg. 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c69c43db66564de049382ac035514316 = L.marker(
+                [-14.99232, -484.53742],
+                {
+}
+            ).addTo(marker_cluster_8591ad2d33bb9d159bb1b91611faf22a);
+        
+    
+        var popup_93eec411684dbc30c4a02b8fdfd22be2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b811839b627d3e172bbe76f8603ae94 = $(`<div id="html_6b811839b627d3e172bbe76f8603ae94" style="width: 100.0%; height: 100.0%;">         <b>Espécie:</b> Theobroma cacao <br>         Lat: -14.992320, Lon: -484.537420         </div>`)[0];
+                popup_93eec411684dbc30c4a02b8fdfd22be2.setContent(html_6b811839b627d3e172bbe76f8603ae94);
+            
+        
+
+        marker_c69c43db66564de049382ac035514316.bindPopup(popup_93eec411684dbc30c4a02b8fdfd22be2)
+        ;
+
+        
+    
+    
+            marker_c69c43db66564de049382ac035514316.bindTooltip(
+                `<div>
+                     Theobroma cacao
+
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_56405d6254dbc9f91c9077c4fa2b4390 = L.marker(
+                [-14.9, -484.63056],
+                {
+}
+            ).addTo(marker_cluster_8591ad2d33bb9d159bb1b91611faf22a);
+        
+    
+        var popup_e3701818cc7205745ba672e0c070d9c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35fe6705b668e60dbc1d1639af8de2a4 = $(`<div id="html_35fe6705b668e60dbc1d1639af8de2a4" style="width: 100.0%; height: 100.0%;">         <b>Espécie:</b> Bignonia aequinoctialis L. <br>         Lat: -14.900000, Lon: -484.630560         </div>`)[0];
+                popup_e3701818cc7205745ba672e0c070d9c2.setContent(html_35fe6705b668e60dbc1d1639af8de2a4);
+            
+        
+
+        marker_56405d6254dbc9f91c9077c4fa2b4390.bindPopup(popup_e3701818cc7205745ba672e0c070d9c2)
+        ;
+
+        
+    
+    
+            marker_56405d6254dbc9f91c9077c4fa2b4390.bindTooltip(
+                `<div>
+                     Bignonia aequinoctialis L. 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fbff0ab8fac802a82d5d55a607a11069 = L.marker(
+                [-14.98511, -484.60903],
+                {
+}
+            ).addTo(marker_cluster_8591ad2d33bb9d159bb1b91611faf22a);
+        
+    
+        var popup_aa8ab801f2ef21de6b739f98d541051a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2acba41948b139c9a50029938e932af = $(`<div id="html_d2acba41948b139c9a50029938e932af" style="width: 100.0%; height: 100.0%;">         <b>Espécie:</b> Pavonia fruticosa<br>         Lat: -14.985110, Lon: -484.609030         </div>`)[0];
+                popup_aa8ab801f2ef21de6b739f98d541051a.setContent(html_d2acba41948b139c9a50029938e932af);
+            
+        
+
+        marker_fbff0ab8fac802a82d5d55a607a11069.bindPopup(popup_aa8ab801f2ef21de6b739f98d541051a)
+        ;
+
+        
+    
+    
+            marker_fbff0ab8fac802a82d5d55a607a11069.bindTooltip(
+                `<div>
+                     Pavonia fruticosa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5cbd0bd622db423c36727c1f62bd45a7 = L.marker(
+                [-15.03333, -484.46667],
+                {
+}
+            ).addTo(marker_cluster_8591ad2d33bb9d159bb1b91611faf22a);
+        
+    
+        var popup_3ef7957ee53134334d2db4cdf7b1adf6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e200cd307dceb0e365681482ff05a6e7 = $(`<div id="html_e200cd307dceb0e365681482ff05a6e7" style="width: 100.0%; height: 100.0%;">         <b>Espécie:</b> Desmoncus polyacanthos <br>         Lat: -15.033330, Lon: -484.466670         </div>`)[0];
+                popup_3ef7957ee53134334d2db4cdf7b1adf6.setContent(html_e200cd307dceb0e365681482ff05a6e7);
+            
+        
+
+        marker_5cbd0bd622db423c36727c1f62bd45a7.bindPopup(popup_3ef7957ee53134334d2db4cdf7b1adf6)
+        ;
+
+        
+    
+    
+            marker_5cbd0bd622db423c36727c1f62bd45a7.bindTooltip(
+                `<div>
+                     Desmoncus polyacanthos 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f1e77c736e6a80218f691483fa050d02 = L.marker(
+                [-15.03333, -484.46944],
+                {
+}
+            ).addTo(marker_cluster_8591ad2d33bb9d159bb1b91611faf22a);
+        
+    
+        var popup_3a544cb8f1322e45d741081c34ee771d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b32d2c196a09a75b54614c10c4a3110d = $(`<div id="html_b32d2c196a09a75b54614c10c4a3110d" style="width: 100.0%; height: 100.0%;">         <b>Espécie:</b> Inga laurina (Sw.) Willd<br>         Lat: -15.033330, Lon: -484.469440         </div>`)[0];
+                popup_3a544cb8f1322e45d741081c34ee771d.setContent(html_b32d2c196a09a75b54614c10c4a3110d);
+            
+        
+
+        marker_f1e77c736e6a80218f691483fa050d02.bindPopup(popup_3a544cb8f1322e45d741081c34ee771d)
+        ;
+
+        
+    
+    
+            marker_f1e77c736e6a80218f691483fa050d02.bindTooltip(
+                `<div>
+                     Inga laurina (Sw.) Willd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e74e7dad4552f6abeadc71b986e16e5d = L.marker(
+                [-15.0408, -484.47998],
+                {
+}
+            ).addTo(marker_cluster_8591ad2d33bb9d159bb1b91611faf22a);
+        
+    
+        var popup_89d2ef412b250e54b53b983184376218 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_192a6d86654b68acedc9a812a3574106 = $(`<div id="html_192a6d86654b68acedc9a812a3574106" style="width: 100.0%; height: 100.0%;">         <b>Espécie:</b> Caladium bicolor (Aiton) Vent<br>         Lat: -15.040800, Lon: -484.479980         </div>`)[0];
+                popup_89d2ef412b250e54b53b983184376218.setContent(html_192a6d86654b68acedc9a812a3574106);
+            
+        
+
+        marker_e74e7dad4552f6abeadc71b986e16e5d.bindPopup(popup_89d2ef412b250e54b53b983184376218)
+        ;
+
+        
+    
+    
+            marker_e74e7dad4552f6abeadc71b986e16e5d.bindTooltip(
+                `<div>
+                     Caladium bicolor (Aiton) Vent
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_42d5019e5e68627b22890c3f0f3bd3ef = L.marker(
+                [-14.98511, -484.60903],
+                {
+}
+            ).addTo(marker_cluster_8591ad2d33bb9d159bb1b91611faf22a);
+        
+    
+        var popup_f0713d836f068188ab8fb52f2090ab9d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8633858f790e9ad8045bedcce63dc482 = $(`<div id="html_8633858f790e9ad8045bedcce63dc482" style="width: 100.0%; height: 100.0%;">         <b>Espécie:</b> Urospatha sagittifolia (Rudge) Schott <br>         Lat: -14.985110, Lon: -484.609030         </div>`)[0];
+                popup_f0713d836f068188ab8fb52f2090ab9d.setContent(html_8633858f790e9ad8045bedcce63dc482);
+            
+        
+
+        marker_42d5019e5e68627b22890c3f0f3bd3ef.bindPopup(popup_f0713d836f068188ab8fb52f2090ab9d)
+        ;
+
+        
+    
+    
+            marker_42d5019e5e68627b22890c3f0f3bd3ef.bindTooltip(
+                `<div>
+                     Urospatha sagittifolia (Rudge) Schott 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_32d77b4252794e9794997db8d7029418 = L.marker(
+                [-14.90352, -484.52798],
+                {
+}
+            ).addTo(marker_cluster_8591ad2d33bb9d159bb1b91611faf22a);
+        
+    
+        var popup_7f3f86b50b43ae49e35fd63446aa7475 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_251b83cd1d5b6edb923f0284eb6c3a87 = $(`<div id="html_251b83cd1d5b6edb923f0284eb6c3a87" style="width: 100.0%; height: 100.0%;">         <b>Espécie:</b> Guzmania lingulata (L.) Mez<br>         Lat: -14.903520, Lon: -484.527980         </div>`)[0];
+                popup_7f3f86b50b43ae49e35fd63446aa7475.setContent(html_251b83cd1d5b6edb923f0284eb6c3a87);
+            
+        
+
+        marker_32d77b4252794e9794997db8d7029418.bindPopup(popup_7f3f86b50b43ae49e35fd63446aa7475)
+        ;
+
+        
+    
+    
+            marker_32d77b4252794e9794997db8d7029418.bindTooltip(
+                `<div>
+                     Guzmania lingulata (L.) Mez
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_65d717a9d11512f53be14d74d3cb4e53 = L.marker(
+                [-15.06944, -484.62222],
+                {
+}
+            ).addTo(marker_cluster_8591ad2d33bb9d159bb1b91611faf22a);
+        
+    
+        var popup_04b1106855958a1e5116ef762c095ce4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e88a77978b4ff49149d94edde14d6b5 = $(`<div id="html_5e88a77978b4ff49149d94edde14d6b5" style="width: 100.0%; height: 100.0%;">         <b>Espécie:</b> Cyperus surinamensis Rottb.<br>         Lat: -15.069440, Lon: -484.622220         </div>`)[0];
+                popup_04b1106855958a1e5116ef762c095ce4.setContent(html_5e88a77978b4ff49149d94edde14d6b5);
+            
+        
+
+        marker_65d717a9d11512f53be14d74d3cb4e53.bindPopup(popup_04b1106855958a1e5116ef762c095ce4)
+        ;
+
+        
+    
+    
+            marker_65d717a9d11512f53be14d74d3cb4e53.bindTooltip(
+                `<div>
+                     Cyperus surinamensis Rottb.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_8591ad2d33bb9d159bb1b91611faf22a.addTo(map_f3bdb1686238329697bcb9b1939fb3ae);
+        
+</script>
+</html>

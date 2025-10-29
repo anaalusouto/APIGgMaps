@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_55c980061c6a25349341d8a8a7c805aa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_55c980061c6a25349341d8a8a7c805aa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_55c980061c6a25349341d8a8a7c805aa = L.map(
+                "map_55c980061c6a25349341d8a8a7c805aa",
+                {
+                    center: [-15.0, -48.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cc6d736e7aed08994330a2d2e791cce3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cc6d736e7aed08994330a2d2e791cce3.addTo(map_55c980061c6a25349341d8a8a7c805aa);
+        
+    
+            var marker_cluster_a7d32fa2242fdfa3cbb423998b738bb0 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_107d83219541a5509ec3d27ef34fa307 = L.marker(
+                [-15.03333, -484.46944],
+                {
+}
+            ).addTo(marker_cluster_a7d32fa2242fdfa3cbb423998b738bb0);
+        
+    
+            var icon_d31a8932e4ee7b44e532065d6077448c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce7a058dc7be18d5211af2b1ba9563a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0d12b4f9d0b99f3efb90811af98cd0c = $(`<div id="html_c0d12b4f9d0b99f3efb90811af98cd0c" style="width: 100.0%; height: 100.0%;">         <b>Espécie Local:</b> Hevea brasiliensis (Willd. ex A. Juss.) Müll. Arg. <br>         <b>Status GBIF (BR):</b> <span style="color:green;">VALIDADO (BR > 0)</span><br>         Lat: -15.033330, Lon: -484.469440         </div>`)[0];
+                popup_ce7a058dc7be18d5211af2b1ba9563a5.setContent(html_c0d12b4f9d0b99f3efb90811af98cd0c);
+            
+        
+
+        marker_107d83219541a5509ec3d27ef34fa307.bindPopup(popup_ce7a058dc7be18d5211af2b1ba9563a5)
+        ;
+
+        
+    
+    
+                marker_107d83219541a5509ec3d27ef34fa307.setIcon(icon_d31a8932e4ee7b44e532065d6077448c);
+            
+    
+            var marker_9728c48241fd7519edff92da64c2ff92 = L.marker(
+                [-14.99232, -484.53742],
+                {
+}
+            ).addTo(marker_cluster_a7d32fa2242fdfa3cbb423998b738bb0);
+        
+    
+            var icon_44ed7e847de549d2dbfafd0c926e3062 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7755de4a0195385e128a30f4eebbe13d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_988d3ae8e51a97a11de0dd895421314d = $(`<div id="html_988d3ae8e51a97a11de0dd895421314d" style="width: 100.0%; height: 100.0%;">         <b>Espécie Local:</b> Theobroma cacao <br>         <b>Status GBIF (BR):</b> <span style="color:green;">VALIDADO (BR > 0)</span><br>         Lat: -14.992320, Lon: -484.537420         </div>`)[0];
+                popup_7755de4a0195385e128a30f4eebbe13d.setContent(html_988d3ae8e51a97a11de0dd895421314d);
+            
+        
+
+        marker_9728c48241fd7519edff92da64c2ff92.bindPopup(popup_7755de4a0195385e128a30f4eebbe13d)
+        ;
+
+        
+    
+    
+                marker_9728c48241fd7519edff92da64c2ff92.setIcon(icon_44ed7e847de549d2dbfafd0c926e3062);
+            
+    
+            var marker_a80002d0742cf97dd102a8525381befb = L.marker(
+                [-14.9, -484.63056],
+                {
+}
+            ).addTo(marker_cluster_a7d32fa2242fdfa3cbb423998b738bb0);
+        
+    
+            var icon_4be501d0a2c826447e8fbc823132d724 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc241ca3cbfa8e1df3bfade0e2efd3e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f4d7749a7293a1860c86708d926251c = $(`<div id="html_9f4d7749a7293a1860c86708d926251c" style="width: 100.0%; height: 100.0%;">         <b>Espécie Local:</b> Bignonia aequinoctialis L. <br>         <b>Status GBIF (BR):</b> <span style="color:green;">VALIDADO (BR > 0)</span><br>         Lat: -14.900000, Lon: -484.630560         </div>`)[0];
+                popup_bc241ca3cbfa8e1df3bfade0e2efd3e1.setContent(html_9f4d7749a7293a1860c86708d926251c);
+            
+        
+
+        marker_a80002d0742cf97dd102a8525381befb.bindPopup(popup_bc241ca3cbfa8e1df3bfade0e2efd3e1)
+        ;
+
+        
+    
+    
+                marker_a80002d0742cf97dd102a8525381befb.setIcon(icon_4be501d0a2c826447e8fbc823132d724);
+            
+    
+            var marker_49b1fa0ed96addbfb37fd0b371d1d68e = L.marker(
+                [-14.98511, -484.60903],
+                {
+}
+            ).addTo(marker_cluster_a7d32fa2242fdfa3cbb423998b738bb0);
+        
+    
+            var icon_7735b0ef87cc3d14071417751d4cb1c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_960cc36f3c1e61c2bde076d7d3e84595 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c722eef6414da491a51a99850bbe2c4 = $(`<div id="html_2c722eef6414da491a51a99850bbe2c4" style="width: 100.0%; height: 100.0%;">         <b>Espécie Local:</b> Pavonia fruticosa<br>         <b>Status GBIF (BR):</b> <span style="color:green;">VALIDADO (BR > 0)</span><br>         Lat: -14.985110, Lon: -484.609030         </div>`)[0];
+                popup_960cc36f3c1e61c2bde076d7d3e84595.setContent(html_2c722eef6414da491a51a99850bbe2c4);
+            
+        
+
+        marker_49b1fa0ed96addbfb37fd0b371d1d68e.bindPopup(popup_960cc36f3c1e61c2bde076d7d3e84595)
+        ;
+
+        
+    
+    
+                marker_49b1fa0ed96addbfb37fd0b371d1d68e.setIcon(icon_7735b0ef87cc3d14071417751d4cb1c3);
+            
+    
+            var marker_7df1351771510dfaca298820a00beb87 = L.marker(
+                [-15.03333, -484.46667],
+                {
+}
+            ).addTo(marker_cluster_a7d32fa2242fdfa3cbb423998b738bb0);
+        
+    
+            var icon_a38635247c6fa2b31d42c64d199c4e5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e2ac0ec9cdffd63212d11da03ae3a3d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fabd4fd321d2bfdfa03ae89202a0bdd7 = $(`<div id="html_fabd4fd321d2bfdfa03ae89202a0bdd7" style="width: 100.0%; height: 100.0%;">         <b>Espécie Local:</b> Desmoncus polyacanthos <br>         <b>Status GBIF (BR):</b> <span style="color:green;">VALIDADO (BR > 0)</span><br>         Lat: -15.033330, Lon: -484.466670         </div>`)[0];
+                popup_7e2ac0ec9cdffd63212d11da03ae3a3d.setContent(html_fabd4fd321d2bfdfa03ae89202a0bdd7);
+            
+        
+
+        marker_7df1351771510dfaca298820a00beb87.bindPopup(popup_7e2ac0ec9cdffd63212d11da03ae3a3d)
+        ;
+
+        
+    
+    
+                marker_7df1351771510dfaca298820a00beb87.setIcon(icon_a38635247c6fa2b31d42c64d199c4e5d);
+            
+    
+            var marker_44c6ccbbadebdce937fbb201de868943 = L.marker(
+                [-15.03333, -484.46944],
+                {
+}
+            ).addTo(marker_cluster_a7d32fa2242fdfa3cbb423998b738bb0);
+        
+    
+            var icon_29c655592c477bb12c0939b06997f685 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9963fa2286bcd639687e4dd603840e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45efcd1370c73b28a7fe42e48bf126b4 = $(`<div id="html_45efcd1370c73b28a7fe42e48bf126b4" style="width: 100.0%; height: 100.0%;">         <b>Espécie Local:</b> Inga laurina (Sw.) Willd<br>         <b>Status GBIF (BR):</b> <span style="color:green;">VALIDADO (BR > 0)</span><br>         Lat: -15.033330, Lon: -484.469440         </div>`)[0];
+                popup_c9963fa2286bcd639687e4dd603840e5.setContent(html_45efcd1370c73b28a7fe42e48bf126b4);
+            
+        
+
+        marker_44c6ccbbadebdce937fbb201de868943.bindPopup(popup_c9963fa2286bcd639687e4dd603840e5)
+        ;
+
+        
+    
+    
+                marker_44c6ccbbadebdce937fbb201de868943.setIcon(icon_29c655592c477bb12c0939b06997f685);
+            
+    
+            var marker_2a8b6003d233c5cc14ec1c6e64b94b29 = L.marker(
+                [-15.0408, -484.47998],
+                {
+}
+            ).addTo(marker_cluster_a7d32fa2242fdfa3cbb423998b738bb0);
+        
+    
+            var icon_3e62e212da540d975dc393050dbf4a32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9ff4a5c8e50149a5d0888862c1cfd4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7d220ae9c26feb2ef30101aa855b5aa = $(`<div id="html_c7d220ae9c26feb2ef30101aa855b5aa" style="width: 100.0%; height: 100.0%;">         <b>Espécie Local:</b> Caladium bicolor (Aiton) Vent<br>         <b>Status GBIF (BR):</b> <span style="color:green;">VALIDADO (BR > 0)</span><br>         Lat: -15.040800, Lon: -484.479980         </div>`)[0];
+                popup_c9ff4a5c8e50149a5d0888862c1cfd4d.setContent(html_c7d220ae9c26feb2ef30101aa855b5aa);
+            
+        
+
+        marker_2a8b6003d233c5cc14ec1c6e64b94b29.bindPopup(popup_c9ff4a5c8e50149a5d0888862c1cfd4d)
+        ;
+
+        
+    
+    
+                marker_2a8b6003d233c5cc14ec1c6e64b94b29.setIcon(icon_3e62e212da540d975dc393050dbf4a32);
+            
+    
+            var marker_1a4dc18e15f071bf4411a3b22e5fe155 = L.marker(
+                [-14.98511, -484.60903],
+                {
+}
+            ).addTo(marker_cluster_a7d32fa2242fdfa3cbb423998b738bb0);
+        
+    
+            var icon_3190cead34fa38f55e4160b869ea2c4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4e52fb6f87cdfe241579fca23768bbb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_800c2d845e6126a9a558806d46864c11 = $(`<div id="html_800c2d845e6126a9a558806d46864c11" style="width: 100.0%; height: 100.0%;">         <b>Espécie Local:</b> Urospatha sagittifolia (Rudge) Schott <br>         <b>Status GBIF (BR):</b> <span style="color:green;">VALIDADO (BR > 0)</span><br>         Lat: -14.985110, Lon: -484.609030         </div>`)[0];
+                popup_f4e52fb6f87cdfe241579fca23768bbb.setContent(html_800c2d845e6126a9a558806d46864c11);
+            
+        
+
+        marker_1a4dc18e15f071bf4411a3b22e5fe155.bindPopup(popup_f4e52fb6f87cdfe241579fca23768bbb)
+        ;
+
+        
+    
+    
+                marker_1a4dc18e15f071bf4411a3b22e5fe155.setIcon(icon_3190cead34fa38f55e4160b869ea2c4f);
+            
+    
+            var marker_0b211d185062bd2f88dc155004fc8bfb = L.marker(
+                [-14.90352, -484.52798],
+                {
+}
+            ).addTo(marker_cluster_a7d32fa2242fdfa3cbb423998b738bb0);
+        
+    
+            var icon_3cbfe5a49cd5d05e4c06cdd9a21cbfc9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69f73ea618a1a2f0c5fe4722b7d8ab63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c044a24d7e9520929860e28bff9fa639 = $(`<div id="html_c044a24d7e9520929860e28bff9fa639" style="width: 100.0%; height: 100.0%;">         <b>Espécie Local:</b> Guzmania lingulata (L.) Mez<br>         <b>Status GBIF (BR):</b> <span style="color:green;">VALIDADO (BR > 0)</span><br>         Lat: -14.903520, Lon: -484.527980         </div>`)[0];
+                popup_69f73ea618a1a2f0c5fe4722b7d8ab63.setContent(html_c044a24d7e9520929860e28bff9fa639);
+            
+        
+
+        marker_0b211d185062bd2f88dc155004fc8bfb.bindPopup(popup_69f73ea618a1a2f0c5fe4722b7d8ab63)
+        ;
+
+        
+    
+    
+                marker_0b211d185062bd2f88dc155004fc8bfb.setIcon(icon_3cbfe5a49cd5d05e4c06cdd9a21cbfc9);
+            
+    
+            var marker_2de41b72ae4ea7d1304c6b8a97839e41 = L.marker(
+                [-15.06944, -484.62222],
+                {
+}
+            ).addTo(marker_cluster_a7d32fa2242fdfa3cbb423998b738bb0);
+        
+    
+            var icon_a1c42c4ddc78447320b4b601c2dd912d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_edadb6ef4df8775cdcd2e308aab38d62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad1ab5ee9a3a03a0fd0f5f63f0016d4c = $(`<div id="html_ad1ab5ee9a3a03a0fd0f5f63f0016d4c" style="width: 100.0%; height: 100.0%;">         <b>Espécie Local:</b> Cyperus surinamensis Rottb.<br>         <b>Status GBIF (BR):</b> <span style="color:green;">VALIDADO (BR > 0)</span><br>         Lat: -15.069440, Lon: -484.622220         </div>`)[0];
+                popup_edadb6ef4df8775cdcd2e308aab38d62.setContent(html_ad1ab5ee9a3a03a0fd0f5f63f0016d4c);
+            
+        
+
+        marker_2de41b72ae4ea7d1304c6b8a97839e41.bindPopup(popup_edadb6ef4df8775cdcd2e308aab38d62)
+        ;
+
+        
+    
+    
+                marker_2de41b72ae4ea7d1304c6b8a97839e41.setIcon(icon_a1c42c4ddc78447320b4b601c2dd912d);
+            
+    
+            marker_cluster_a7d32fa2242fdfa3cbb423998b738bb0.addTo(map_55c980061c6a25349341d8a8a7c805aa);
+        
+</script>
+</html>
