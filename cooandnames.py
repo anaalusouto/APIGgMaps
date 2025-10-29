@@ -13,6 +13,7 @@ COLUNA_COORDENADAS_COMBINADAS = 'COORDENADAS'
 # *** AJUSTE ESTE NOME para a sua coluna de nome científico ***
 COLUNA_ESPECIE = 'NOME'
 NOME_ARQUIVO_MAPA_HTML = 'mapa_validacao_gbif_brasil.html'
+# revisar
 
 # --- CONSTANTES INTERNAS ---
 LATITUDE_FINAL = 'LAT_PLOTAR'
