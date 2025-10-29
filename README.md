@@ -1,4 +1,4 @@
-# 🌴 GBIF Species Distribution Mapper: Ilha do Combu Focus
+# 🌴 GBIF Species Distribution Mapper: Combu Island Focus
 
 ## Project Description
 
